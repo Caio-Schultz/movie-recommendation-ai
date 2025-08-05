@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "tb_movie")
+@Table(name = "tb_filme")
 @AllArgsConstructor
 @NoArgsConstructor
 public class FilmeModel {
@@ -17,7 +17,9 @@ public class FilmeModel {
     private Long id;
     @Column(unique = true)
     private String nome;
+    @Enumerated(EnumType.STRING)
     private FaixaEtaria faixaEtaria;
+    @Enumerated(EnumType.STRING)
     private Genero genero;
     private String descricao;
 
