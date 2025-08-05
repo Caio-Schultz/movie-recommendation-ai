@@ -61,7 +61,7 @@ public class FilmeController {
         }
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/deletar/{id}")
     public ResponseEntity<String> deletar(@PathVariable Long id){
         if(service.listarPorId(id) != null){
             service.deletar(id);
