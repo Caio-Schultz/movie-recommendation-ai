@@ -10,7 +10,8 @@ public enum Genero {
     FICCAO_CIENTIFICA("Ficção científica"),
     ROMANCE("Romance"),
     SUSPENSE("Suspense"),
-    TERROR("Terror");
+    TERROR("Terror"),
+    OUTROS("Outros");
 
     private String nome;
 
