@@ -1,0 +1,2 @@
+ALTER TABLE tb_filme
+ALTER COLUMN descricao set DATA TYPE CLOB;
